@@ -1,8 +1,8 @@
 /*
-	index_1.js
+	criptaritmos.js
+	28/2/2020
 	11/2/2020
 
-	revisar en linea 138
 
 	pendiente de resolver la letra Ñ
 
