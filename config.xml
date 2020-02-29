@@ -1,0 +1,53 @@
+<widget
+	xmlns   = "http://www.w3.org/ns/widgets"
+	xmlns:gap	= "http://phonegap.com/ns/1.0"
+    id          = "ar.com.ingverger.sumado"
+	versionCode = "10706"
+    version     = "1.7.6" >
+
+	<name>SUMADO</name>
+
+  <description>
+	SUMADO is a logic game. It is an opportunity for mental exercise and fun at the same time.
+	What does it consist of?
+	There is a set of circles joined by lines that form squares and triangles. 
+	The degree of difficulty of the game is fixed by the number of circles; 
+	They have been assigned numbers from 1 to 9 in the case of a SU-MA-DO of 3x3, from 1 to 16 for the case of SU-MA-DO of 4x4 
+	and of 1 to 25 for the case of a 5x5 SUMADO. The number within each triangle or square is the sum of the circles of that figure. 
+	The object of the game is to deduce the values assigned to each circle. Some of these numbers are given as help. 
+  </description>
+
+	<author href="http://www.ingverger.com.ar/sumado.php" email="ingverger@gmail.com">
+		Guillermo Verger
+	</author>
+
+	<preference name="android-targetSdkVersion"  value="26" /> 
+
+	<platform name="android">
+		<icon	src="icon.png" />
+        <icon   src="res/icon/android/drawable-ldpi-icon.png"               density="ldpi" />
+        <icon   src="res/icon/android/drawable-mdpi-icon.png"               density="mdpi" />
+        <icon   src="res/icon/android/drawable-hdpi-icon.png"               density="hdpi" />
+        <icon   src="res/icon/android/drawable-xhdpi-icon.png"              density="xhdpi" />
+        <icon   src="res/icon/android/drawable-xxhdpi-icon.png"             density="xxhdpi" />
+        <icon   src="res/icon/android/drawable-xxxhdpi-icon.png"            density="xxxhdpi" />
+        <splash src="res/screen/android/drawable-land-ldpi-screen.png"      density="land-ldpi" />
+        <splash src="res/screen/android/drawable-land-mdpi-screen.png"      density="land-mdpi" />
+        <splash src="res/screen/android/drawable-land-hdpi-screen.png"      density="land-hdpi" />
+        <splash src="res/screen/android/drawable-land-xhdpi-screen.png"     density="land-xhdpi" />
+        <splash src="res/screen/android/drawable-land-xxhdpi-screen.png"    density="land-xxhdpi" />
+        <splash src="res/screen/android/drawable-land-xxxhdpi-screen.png"   density="land-xxxhdpi" />
+        <splash src="res/screen/android/drawable-port-ldpi-screen.png"      density="port-ldpi" />
+        <splash src="res/screen/android/drawable-port-mdpi-screen.png"      density="port-mdpi" />
+        <splash src="res/screen/android/drawable-port-hdpi-screen.png"      density="port-hdpi" />
+        <splash src="res/screen/android/drawable-port-xhdpi-screen.png"     density="port-xhdpi" />
+        <splash src="res/screen/android/drawable-port-xxhdpi-screen.png"    density="port-xxhdpi" />
+        <splash src="res/screen/android/drawable-port-xxxhdpi-screen.png"   density="port-xxxhdpi" />
+
+    </platform>
+
+    <preference name="orientation"	value="landscape" />        <!-- all: default means both landscape and portrait are enabled -->
+
+	<content src="index.html" />
+
+</widget>

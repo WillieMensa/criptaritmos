@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="sp">
+
+<head>
+  <meta name="Author" content="VW Clever Games">
+  <meta name="Keywords" content="Cryptarithmetic, Criptaritmetica">
+  <meta name="Description" content="Resolucion problemas de criptoaritmetica">
+  <title>Criptaritmos</title>
+
+	<meta charset="ISO-8859-1">
+	<meta name="viewport" content="width=device-width">
+  <!-- <link href="css/index.css" rel="stylesheet" type="text/css" /> -->
+
+	<style>
+
+	body {
+		width: 90%;
+		max-width: 800px;
+		margin: 2em auto;
+		font: 1.0em Arial, Helvetica, sans-serif;
+		background: gray;
+	}
+
+	.container {
+		display: grid;
+		grid-template-columns: repeat(12, minmax(0,1fr));
+		grid-gap: 20px;
+	}
+
+	.container > div {
+		border-radius: 5px;
+		padding: 10px;
+		background-color: rgb(196,212,212);
+		border: 2px solid rgb(79,185,227);
+	}          
+
+	.col {
+		background: rgb(255,150,150);
+	}
+
+	.span2 { grid-column: auto / span 2;}
+	.span3 { grid-column: auto / span 3;}
+	.span4 { grid-column: auto / span 4;}
+	.span5 { grid-column: auto / span 5;}
+	.span6 { grid-column: auto / span 6;}
+	.span7 { grid-column: auto / span 7;}
+	.span8 { grid-column: auto / span 8;}
+	.span9 { grid-column: auto / span 9;}
+	.span10 { grid-column: auto / span 10;}
+	.span11 { grid-column: auto / span 11;}
+	.span12 { grid-column: auto / span 12;}
+
+/*
+	header {
+		grid-column: 1 / 12;
+		grid-row: 1;
+	}
+*/
+	aside {
+		grid-column: 1 / 6;
+		grid-row: 2;
+		padding: 10px;
+		text-align: right;
+	}
+
+	article {
+		grid-column: 6 / 12;
+		grid-row: 2;
+	}
+
+	footer {
+		grid-column: 1 / 12;
+		grid-row: 3;
+	}
+					
+	header,
+	footer {
+		border-radius: 5px;
+		padding: 10px;
+		background-color: rgb(182,196,196);
+		border: 2px solid rgb(79,185,227);
+		color: maroon;
+	}
+					
+	aside {
+		border-right: 1px solid #999;
+	}
+
+
+	table {
+		font-family: arial, sans-serif;
+		border-collapse: collapse;
+		width: 100%;
+	}
+
+	td, th {
+		border: 1px solid #dddddd;
+		
+		padding: 8px;
+		width: 50%;
+	}
+
+	.right {
+		text-align: right;
+	}
+
+
+/*
+	tr:nth-child(even) {
+		background-color: #dddddd;
+	}
+*/
+	.uppercase {
+		text-transform:uppercase;
+	}
+
+	</style>
+
+  <!-- <link rel="stylesheet" href="./style.css"> -->
+
+</head>
+
+<body onload="init()">
+<!-- partial:index.partial.html -->
+<!-- Learn about this code on MDN: https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Grids -->
+
+<div class="container">
+	<div class="col span12">
+		<h1>Criptoaritm&eacute;tica</h1>
+	</div>
+
+	<div class="col span6">
+	  <h1>Resolver</h1>
+		<table>
+			<tr>	<td class="right">Sumando 1</td><td><input type="text" id="sumando1"	class="uppercase"	name="sumando1" value='LAPIZ'> </td></tr>
+			<tr>	<td class="right">Sumando 2</td><td><input type="text" id="sumando2"	class="uppercase"	name="sumando2" value='PAPEL'></td></tr>
+			<tr>	<td class="right">Total</td>		<td><input type="text" id="Total"			class="uppercase"	name="Total"		value='ANOTA'>      </td></tr>
+
+		</table>
+
+		<button onclick="main()">Calcular</button>
+
+  </div>
+
+	<div class="col span6">
+	  <h1>Solución</h1>
+		<table>
+			<tr>	<td class="right">Sumando 1</td><td id="digit_suma1"></td></tr>
+			<tr>	<td class="right">Sumando 2</td><td id="digit_suma2"></td></tr>
+			<tr>	<td class="right">Total</td>		<td id="digit_total"></td></tr>
+
+		</table>
+
+  </div>
+
+	<div class="col span12">
+  <a href="https://play.google.com/store/apps/dev?id=6494906246736330893&hl=es-419">
+		Más aplicaciones</a>		
+	</div>
+
+</div>
+<!-- partial -->
+
+  <!-- <script src="index_1.js"></script> -->
+  <script src="criptaritmos.js"></script>
+
+</body>
+</html>
