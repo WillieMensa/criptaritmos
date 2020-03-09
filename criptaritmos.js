@@ -20,7 +20,7 @@
 // constantes
 //=========
 const 
-  versionString="0.1.0", //  lleva el numero de version actual
+  versionString="0.2.0", //  lleva el numero de version actual
   DEBUG = true,          //  para depurar código
   DEBUG2 = false;
 
@@ -31,24 +31,19 @@ const
 var use = new Array(10);			//	<int> use(10); 
   
 // structure to store char and its corresponding integer 
-var node = { 
-    c:'', 
-    v:0 
-}; 
+//	var node = { 
+//	    c:'', 
+//	    v:0 
+//	}; 
   
-var 
-	s1,
-	s2,
-	s3,
+var				//		s1,	s2,	s3,
 	nodeArr ;
 
 	
-function init() {
-	for (var i=0;i<use.length ;i++ )use[i]=0;
-
-
+	//	function init() {
+	//		for (var i=0;i<use.length ;i++ )use[i]=0;
 	//	main();
-};
+	//	};
 
 
 // function check for correct solution 
@@ -100,15 +95,14 @@ function check(nodeArr, count, s1, s2, s3)		//	node* nodeArr, const int count, s
 
     // sum of first two number equal to third return true 
     if (val3 == (val1 + val2)) 
-        return 1; 
+        return true;		//	1; 
   
     // else return false 
-    return 0; 
+    return false;			//	0; 
 } 
   
 // Recursive function to check solution for all permutations 
 function permutation(count, nodeArr, n, s1, s2, s3) 
-	//	bool permutation(const int count, node* nodeArr, int n, string s1, string s2, string s3) 
 { 
 	//	console.log('count, ' ,count, ' n:',n);
 	var num1,	num2,	num3;			//	,	regex, char;
@@ -127,13 +121,13 @@ function permutation(count, nodeArr, n, s1, s2, s3)
 				nodeArr[n].v = i; 
 
 				// if solution found 
-				if (check(nodeArr, count, s1, s2, s3) == 1) 
+				if (check(nodeArr, count, s1, s2, s3) == true ) 
 				{ 
 					//	console.trace();
-					var resultado = "Solucion encontrada: ";			//	cout << "Solution found: "; 
+					var resultado = "Solucion encontrada: \n";			//	cout << "Solution found: "; 
 
 					for (var j = 0; j < count; j++) 
-							resultado += " / " + nodeArr[j].c + " = " + nodeArr[j].v + '\n'; 
+							resultado += "  " + nodeArr[j].c + " = " + nodeArr[j].v + '\n'; 
 					console.log( resultado ) ;			//	cout << "Solution found: "; 
 
 					//	document.getElementById("resultado").innerHTML=resultado;
@@ -278,7 +272,7 @@ function solveCryptographic(s1, s2, s3)		//	bool solveCryptographic(string s1, s
 		//	console.log( "s1[i], s1.charCodeAt(i) - 65: ", s1[i], s1.charCodeAt(i)-65, freq[s1.charCodeAt(i)-65] );
 		//	}
 
-		console.log('freq: ', freq );
+		//	console.log('freq: ', freq );
 
 
 
@@ -291,7 +285,7 @@ function solveCryptographic(s1, s2, s3)		//	bool solveCryptographic(string s1, s
     for (var i = 0; i < l3; i++) 
         ++freq[s3.charCodeAt(i)-65]; 
 
-		console.log('freq: ', freq );
+		//	console.log('freq: ', freq );
   
     // count number of unique char 
     for (var i = 0; i < 26; i++) 
@@ -302,7 +296,7 @@ function solveCryptographic(s1, s2, s3)		//	bool solveCryptographic(string s1, s
     if (count > 10) 
     { 
         alert( count + " caracteres. Cadena inválida"); 
-        return 0; 
+        return false; 
     } 
 
 	
@@ -310,9 +304,10 @@ function solveCryptographic(s1, s2, s3)		//	bool solveCryptographic(string s1, s
     // array of nodes 
     nodeArr = new Array(count); 
 
-    for (var i = 0; i < nodeArr.length; i++) {
+		//	inicializamos array de letras - numeros
+		for (var i = 0; i < nodeArr.length; i++) {
 			nodeArr[i] = {c:'',v:-1};	// 		++freq[s1.charCodeAt(i)-65]; 
-			console.log('nodeArr[',i,']: ', nodeArr[i]);
+			//	console.log('nodeArr[',i,']: ', nodeArr[i]);
 		}
 		
 
@@ -335,21 +330,30 @@ function solveCryptographic(s1, s2, s3)		//	bool solveCryptographic(string s1, s
 			{
 				txt += nodeArr[i].c +', '+ nodeArr[i].v + '\n';
 			}
+			console.log(txt);
+			console.trace();
 		}
-		console.log(txt);
-		console.trace();
 
+		var lReturn = permutation(count, nodeArr, 0, s1, s2, s3);
 
-		//	if (DEBUG)
-		//	{
-		//		var temp = permutation(count, nodeArr, 0, s1, s2, s3); 
-		//		console.log( 'permutation(count, nodeArr, 0, s1, s2, s3): ', temp );
-		//	} else {
-			return permutation(count, nodeArr, 0, s1, s2, s3); 
+		if (DEBUG)
+		{
+			var txt = 'nodeArr: \n';
+	    for (var i = 0; i < nodeArr.length; i++) 
+			{
+				txt += nodeArr[i].c +', '+ nodeArr[i].v + '\n';
+			}
+			console.log(txt);
+
+			console.log( 'permutation(count, nodeArr, 0, s1, s2, s3): ', lReturn );
+			console.log( 'count, s1, s2, s3): ', count, s1, s2, s3 );
+
+			//	console.log( '%c nodeArr: '+ mostrarPropiedades( nodeArr, 'nodeArr'), "color: green; font-style: italic" );
+		} 
+		//	else {
 		//	}
 
-		//	console.log( permutation(count, nodeArr, 0, s1, s2, s3)); 
-    //	return permutation(count, nodeArr, 0, s1, s2, s3); 
+    return lReturn;				//	permutation(count, nodeArr, 0, s1, s2, s3); 
 } 
   
 // Driver function 
@@ -373,15 +377,17 @@ function main() //int main()
 	document.getElementById("digit_total").innerHTML = '';
 
 
-	s1 = document.getElementById("sumando1").value,
-	s2 = document.getElementById("sumando2").value,
-	s3 = document.getElementById("Total").value,
+	var s1 = document.getElementById("sumando1").value,
+		s2 = document.getElementById("sumando2").value,
+		s3 = document.getElementById("Total").value;
 
 	s1 = s1.toUpperCase();
 	s2 = s2.toUpperCase();
 	s3 = s3.toUpperCase();
 
-	console.log('s1, s2, s3: ' ,s1, s2, s3);
+	for (var i=0;i<use.length ;i++ )use[i]=0;
+
+	console.log('='.repeat(32), '\ns1, s2, s3: ' ,s1, s2, s3);
 
 	//	s2 = s2.toUpperCase( document.getElementById("sumando2").value);
 	//	s3 = s3.toUpperCase( document.getElementById("Total").value);
