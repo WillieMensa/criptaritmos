@@ -20,7 +20,7 @@
 // constantes
 //=========
 const 
-  versionString="0.2.0", //  lleva el numero de version actual
+  versionString="0.3.0", //  lleva el numero de version actual
   DEBUG = true,          //  para depurar código
   DEBUG2 = false;
 

@@ -1,15 +1,15 @@
 <widget
 	xmlns   = "http://www.w3.org/ns/widgets"
 	xmlns:gap	= "http://phonegap.com/ns/1.0"
-    id          = "ar.com.ingverger.criptaritmos"
-	versionCode = "00200"
-    version     = "0.2.0" >
+    id          = "ar.com.ingverger.criptosumas"
+	versionCode = "00300"
+    version     = "0.3.0" >
 
-	<name>Criptaritmos</name>
+	<name>Criptosumas</name>
 
   <description>
-	Criptaritmos permite resolver problemas de sumas criptoaritmeticas.
-	Criptaritmos let solve cryptoarithmetic adding problems.
+	Criptosumas permite resolver problemas de sumas criptoaritmeticas.
+	Criptosumas let solve cryptoarithmetic adding problems.
 
   </description>
 

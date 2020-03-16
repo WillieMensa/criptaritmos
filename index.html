@@ -3,9 +3,9 @@
 
 <head>
   <meta name="Author" content="VW Clever Games">
-  <meta name="Keywords" content="Cryptarithmetic, Criptaritmetica">
+  <meta name="Keywords" content="Criptosumas, Cryptarithmetic, Criptaritmetica">
   <meta name="Description" content="Resolucion problemas de criptoaritmetica">
-  <title>Criptaritmos</title>
+  <title>Criptosumas 0.3.0</title>
 
 	<meta charset="ISO-8859-1">
 	<meta name="viewport" content="width=device-width">
@@ -18,7 +18,7 @@
 		max-width: 800px;
 		margin: 2em auto;
 		font: 1.0em Arial, Helvetica, sans-serif;
-		background: gray;
+		background: #114411;
 	}
 
 	.container {
@@ -29,9 +29,9 @@
 
 	.container > div {
 		border-radius: 5px;
-		padding: 10px;
+		padding: 12px;
 		background-color: rgb(196,212,212);
-		border: 2px solid rgb(79,185,227);
+		/* border: 2px solid rgb(79,185,227); */
 	}          
 
 	.col {
@@ -100,6 +100,10 @@
 		width: 50%;
 	}
 
+	.center {
+		text-align: center;
+	}
+
 	.right {
 		text-align: right;
 	}
@@ -125,12 +129,16 @@
 <!-- Learn about this code on MDN: https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Grids -->
 
 <div class="container">
-	<div class="col span12">
-		<h1>Criptoaritm&eacute;tica</h1>
+	<div class="col span4 center">
+		<img src="img/logo.jpg" width="96" height="96" border="0" alt="">
+	</div>
+	<div class="col span8 center">
+		<h1>Criptosumas</h1>
 	</div>
 
+	<!-- Fila de problema y solución -->
 	<div class="col span6">
-	  <h1>Resolver</h1>
+	  <h1>Suma</h1>
 		<table>
 			<tr>	<td class="right">Sumando 1</td><td><input type="text" id="sumando1"	class="uppercase"	name="sumando1" value='CULO'> </td></tr>
 			<tr>	<td class="right">Sumando 2</td><td><input type="text" id="sumando2"	class="uppercase"	name="sumando2" value='PEDO'></td></tr>
@@ -153,8 +161,31 @@
 
   </div>
 
-	<div class="col span12">
-  <a href="https://play.google.com/store/apps/dev?id=6494906246736330893&hl=es-419">
+	<!-- Fila de varios -->
+	<div class="col span3 center">
+	  <a href="#">
+		<img src="img/ayuda.svg" width="48" height="48" border="0" alt=""><br>
+		Ayuda</a>		
+	</div>
+
+	<div class="col span3 center">
+	  <a href="#">
+			<img src="img/acercade.svg" width="48" height="48" border="0" alt=""><br>
+			Acerca de</a>
+	</div>
+
+	<div class="col span3 center">
+			<img src="img/ajustes.svg" width="48" height="48" border="0" alt=""><br>
+	  <a href="#">Ajustes</a>		
+	</div>
+
+	<div class="col span3 center">
+		<img src="img/exit-door.svg" width="48" height="48" border="0" alt=""><br>
+	  <a href="#">Salir</a>		
+	</div>
+
+	<div class="col span3 center">
+	  <a href="https://play.google.com/store/apps/dev?id=6494906246736330893&hl=es-419">
 		Más aplicaciones</a>		
 	</div>
 

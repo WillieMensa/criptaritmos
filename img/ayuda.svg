@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48px" height="48px">
+  <!-- <rect id="fondo" x="0" y="0" width="48" height="48" fill="lightblue" /> -->
+  <circle cx="24" cy="24" r="22" fill="rgb(196,212,212)" stroke="black" stroke-width="4" />
+
+  <text x="12"  y="38"
+    style="font-family: Helvetica;
+    font-size  : 40;
+    stroke     : #000000;
+    fill       : #000000;">?
+  </text>
+</svg>
