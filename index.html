@@ -5,188 +5,138 @@
   <meta name="Author" content="VW Clever Games">
   <meta name="Keywords" content="Criptosumas, Cryptarithmetic, Criptaritmetica">
   <meta name="Description" content="Resolucion problemas de criptoaritmetica">
-  <title>Criptosumas 0.3.0</title>
+  <title>Criptosumas 0.4.0</title>
+	<!-- Exploramos alternativa utilizando Bootstrap.css -->
 
 	<meta charset="ISO-8859-1">
-	<meta name="viewport" content="width=device-width">
-  <!-- <link href="css/index.css" rel="stylesheet" type="text/css" /> -->
 
-	<style>
+	<!-- genericheading.shtml -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-	body {
-		width: 90%;
-		max-width: 800px;
-		margin: 2em auto;
-		font: 1.0em Arial, Helvetica, sans-serif;
-		background: #114411;
-	}
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	.container {
-		display: grid;
-		grid-template-columns: repeat(12, minmax(0,1fr));
-		grid-gap: 20px;
-	}
+	<!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 
-	.container > div {
-		border-radius: 5px;
-		padding: 12px;
-		background-color: rgb(196,212,212);
-		/* border: 2px solid rgb(79,185,227); */
-	}          
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 
-	.col {
-		background: rgb(255,150,150);
-	}
+	<!-- fin de genericheading.shtml -->
 
-	.span2 { grid-column: auto / span 2;}
-	.span3 { grid-column: auto / span 3;}
-	.span4 { grid-column: auto / span 4;}
-	.span5 { grid-column: auto / span 5;}
-	.span6 { grid-column: auto / span 6;}
-	.span7 { grid-column: auto / span 7;}
-	.span8 { grid-column: auto / span 8;}
-	.span9 { grid-column: auto / span 9;}
-	.span10 { grid-column: auto / span 10;}
-	.span11 { grid-column: auto / span 11;}
-	.span12 { grid-column: auto / span 12;}
-
-/*
-	header {
-		grid-column: 1 / 12;
-		grid-row: 1;
-	}
-*/
-	aside {
-		grid-column: 1 / 6;
-		grid-row: 2;
-		padding: 10px;
-		text-align: right;
-	}
-
-	article {
-		grid-column: 6 / 12;
-		grid-row: 2;
-	}
-
-	footer {
-		grid-column: 1 / 12;
-		grid-row: 3;
-	}
-					
-	header,
-	footer {
-		border-radius: 5px;
-		padding: 10px;
-		background-color: rgb(182,196,196);
-		border: 2px solid rgb(79,185,227);
-		color: maroon;
-	}
-					
-	aside {
-		border-right: 1px solid #999;
-	}
-
-
-	table {
-		font-family: arial, sans-serif;
-		border-collapse: collapse;
-		width: 100%;
-	}
-
-	td, th {
-		border: 1px solid #dddddd;
-		
-		padding: 8px;
-		width: 50%;
-	}
-
-	.center {
-		text-align: center;
-	}
-
-	.right {
-		text-align: right;
-	}
-
-
-/*
-	tr:nth-child(even) {
-		background-color: #dddddd;
-	}
-*/
-	.uppercase {
-		text-transform:uppercase;
-	}
-
-	</style>
-
-  <!-- <link rel="stylesheet" href="./style.css"> -->
+  <link href="css/index.css" rel="stylesheet" type="text/css" />
 
 </head>
 
+
 <body> 
-<!-- partial:index.partial.html -->
-<!-- Learn about this code on MDN: https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Grids -->
 
 <div class="container">
-	<div class="col span4 center">
-		<img src="img/logo.jpg" width="96" height="96" border="0" alt="">
-	</div>
-	<div class="col span8 center">
-		<h1>Criptosumas</h1>
-	</div>
+  <div class="row">
+    <div class="col-sm-4 center">
+			<img class="img-responsive" src="img/logo.svg" width="96" height="96" border="0" alt="">
+    </div>
+    <div class="col-sm-8 center">
+			<h1>Criptosumas</h1>
+			<p>Versión 0.4.0</p>
+    </div>
+  </div>
+
 
 	<!-- Fila de problema y solución -->
-	<div class="col span6">
-	  <h1>Suma</h1>
-		<table>
-			<tr>	<td class="right">Sumando 1</td><td><input type="text" id="sumando1"	class="uppercase"	name="sumando1" value='CULO'> </td></tr>
-			<tr>	<td class="right">Sumando 2</td><td><input type="text" id="sumando2"	class="uppercase"	name="sumando2" value='PEDO'></td></tr>
-			<tr>	<td class="right">Total</td>		<td><input type="text" id="Total"			class="uppercase"	name="Total"		value='CACA'>      </td></tr>
+  <div class="row">
+		<div class="col-sm-6">
+			<h1>Suma</h1>
+			<table>
+				<tr><td class="right">Sumando 1</td><td><input type="text" id="sumando1"	class="uppercase"	name="sumando1" value='AGUA' 
+					required minlength="4" maxlength="8" size="8"></td>
+				</tr>
+				<tr><td class="right">Sumando 2</td><td><input type="text" id="sumando2"	class="uppercase"	name="sumando2" value='YERBA'
+					required minlength="4" maxlength="8" size="8"></td>
+				</tr>
+				<tr><td class="right">Total</td>		<td><input type="text" id="Total"			class="uppercase"	name="Total"		value='MATES'
+					required minlength="4" maxlength="8" size="8"></td>
+				</tr>
 
-		</table>
+			</table>
 
-		<button onclick="main()">Calcular</button>
+			<button	class="uppercase" onclick="main()">Calcular</button>
 
-  </div>
+		</div>
 
-	<div class="col span6">
-	  <h1>Solución</h1>
-		<table>
-			<tr>	<td class="right">Sumando 1</td><td id="digit_suma1"></td></tr>
-			<tr>	<td class="right">Sumando 2</td><td id="digit_suma2"></td></tr>
-			<tr>	<td class="right">Total</td>		<td id="digit_total"></td></tr>
+		<div class="col-sm-6">
+			<h1>Solución</h1>
+			<table>
+				<tr>	<td class="right">Sumando 1</td><td id="digit_suma1"></td></tr>
+				<tr>	<td class="right">Sumando 2</td><td id="digit_suma2"></td></tr>
+				<tr>	<td class="right">Total</td>		<td id="digit_total"></td></tr>
 
-		</table>
+			</table>
 
-  </div>
-
-	<!-- Fila de varios -->
-	<div class="col span3 center">
-	  <a href="#">
-		<img src="img/ayuda.svg" width="48" height="48" border="0" alt=""><br>
-		Ayuda</a>		
+		</div>
 	</div>
 
-	<div class="col span3 center">
-	  <a href="#">
-			<img src="img/acercade.svg" width="48" height="48" border="0" alt=""><br>
-			Acerca de</a>
+	<!-- fila de botones menu inicio -->
+  <div class="row">
+		<div class="col-sm-3 center">
+			<a href="ayuda.html">
+				<!-- svg aqui para que acepte el font -->
+				<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+					<path d="M0 0h48v48H0z" fill="none"/>
+					<path d="M38 4H10C7.79 4 6 5.79 6 8v28c0 2.21 1.79 4 4 4h8l6 6 6-6h8c2.21 0 4-1.79 4-4V8c0-2.21-1.79-4-4-4z" />
+					<path d="M26 36h-4v-4h4v4zm4.13-15.49l-1.79 1.84C26.9 23.79 26 25 26 28h-4v-1c0-2.21.9-4.21 2.34-5.66l2.49-2.52C27.55 18.1 28 17.1 28 16c0-2.21-1.79-4-4-4s-4 1.79-4 4h-4c0-4.42 3.58-8 8-8s8 3.58 8 8c0 1.76-.71 3.35-1.87 4.51z"/> 
+					<text x="12"  y="34"
+						style="font-family: sonsie_oneregular;
+						font-size  : 28;
+						stroke     : #eeeeee;
+						fill       : #eeeeee;">?
+					</text>
+				</svg>
+
+				<br>
+				Ayuda</a>		
+		</div>
+
+		<div class="col-sm-3 center">
+			<a href="acercade.html">
+				<!-- svg aqui para que acepte el font -->
+				<svg xmlns="http://www.w3.org/2000/svg" width="48px" height="48px">
+					<circle cx="24" cy="24" r="22" fill="#111111" />
+					<text x="15"  y="36"
+						style="font-family: sonsie_oneregular;
+						font-size  : 32;
+						stroke     : #eeeeee;
+						fill       : #eeeeee;">i
+					</text>
+				</svg>
+				<br>Acerca de</a>
+		</div>
+
+		<div class="col-sm-3 center">
+			<!-- <a href="#">
+			<img src="img/ajustes.svg" width="48" height="48" border="0" alt="">
+			<br>Ajustes</a> -->
+		</div>
+
+		<div class="col-sm-3 center">
+			<a href="...">
+				<img src="img/exit-door.svg" width="48" height="48" border="0" alt=""><br>
+				Salir</a>		
+		</div>
+
 	</div>
 
-	<div class="col span3 center">
-			<img src="img/ajustes.svg" width="48" height="48" border="0" alt=""><br>
-	  <a href="#">Ajustes</a>		
-	</div>
 
-	<div class="col span3 center">
-		<img src="img/exit-door.svg" width="48" height="48" border="0" alt=""><br>
-	  <a href="#">Salir</a>		
-	</div>
+	<!-- ultima fila de botones  -->
+  <div class="row">
+		<div class="col-sm-12">
+			<p><a href="https://play.google.com/store/apps/dev?id=6494906246736330893&hl=es-419">
+				<img src="img/google_play_logo.png" width="78" height="78" border="0" alt="">&nbsp;&nbsp;
+				Más aplicaciones en Google Play Store</a>		
 
-	<div class="col span3 center">
-	  <a href="https://play.google.com/store/apps/dev?id=6494906246736330893&hl=es-419">
-		Más aplicaciones</a>		
 	</div>
 
 </div>
