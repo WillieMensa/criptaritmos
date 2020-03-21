@@ -14,9 +14,9 @@ body {
 
 .container > div {
 	border-radius: 5px;
-	padding: 8px;
+	padding: 2px;
 	background-color: #ccffdd;
-	margin: 0.4em auto;
+	margin: 0.2em auto;
 
 	/* border: 2px solid rgb(79,185,227); */
 }          

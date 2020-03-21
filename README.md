@@ -1,8 +1,8 @@
-# SUMADO. A logic game.
+# CRIPTOSUMAS
 by Willie Verger
 
 ## Description
-SUMADO is a logic game. It's an opportunity for mental exercise and fun at the same time.
+CRIPTOSUMAS is a logic game. It's an opportunity for mental exercise and fun at the same time.
 
 ### What does it consist of?
 There is a set of circles joined by lines that form squares and triangles.
@@ -58,9 +58,9 @@ Another good resource for generating a good CSP declaration is [CSP is Awesome][
 ## Descripción
 SUMADO es un juego de lógica.  Una oportunidad de ejercicio mental y diversión al mismo tiempo.
 ### ¿En que consiste?
-Hay un conjunto de círculos unidos por líneas que forman cuadrados y triángulos. 
+Hay un conjunto de círculos unidos por líneas que forman cuadrados y triángulos.
 En los círculos o vértices de cada figura se ha asignado un número diferente entre uno y nueve.
-En cada figura se muestra la suma resultante de los correspondientes vértices.  
+En cada figura se muestra la suma resultante de los correspondientes vértices.
 El objeto del juego es deducir los valores asignados a cada círculo.  Se da como ayuda los valores de dos vértices.
 
 #### Descripción breve
@@ -68,7 +68,7 @@ Un juego de lógica, aritmética, ejercicio mental y diversión al mismo tiempo.
 ### ¿En que consiste?
 
 Hay un conjunto de círculos unidos por líneas que forman cuadrados y triángulos. En los círculos o vértices de cada figura se ha asignado un número diferente entre uno y nueve.
-En cada figura se muestra la suma resultante de los correspondientes vértices.  
+En cada figura se muestra la suma resultante de los correspondientes vértices.
 El objeto del juego es deducir los valores asignados a cada círculo.  Se da como ayuda los valores de dos vértices.
 
 ### Requerimientos
@@ -76,24 +76,24 @@ Requiere del ejercicio de la lógica y un mínimo conocimiento de aritmética para 
 
 ### Variantes
 Se pueden generar juegos con diferente cantidad de vértices.
-en ellos se han asignado números del 1 al 9 para el caso de un SU-MA-DO de 3x3, del 1 al 16 para el caso de un SU-MA-DO de 4x4 
-y del 1 al 25 para el caso de un SU-MA-DO de 5x5.  El número dentro de cada triángulo o cuadrado es la suma de los círculos de esa figura.  
-El objeto del juego es deducir los valores asignados a cada círculo.  Se dan como ayuda algunos de estos números.  
+en ellos se han asignado números del 1 al 9 para el caso de un SU-MA-DO de 3x3, del 1 al 16 para el caso de un SU-MA-DO de 4x4
+y del 1 al 25 para el caso de un SU-MA-DO de 5x5.  El número dentro de cada triángulo o cuadrado es la suma de los círculos de esa figura.
+El objeto del juego es deducir los valores asignados a cada círculo.  Se dan como ayuda algunos de estos números.
 A mayor cantidad de círculos, mayor dificultad.
 
 Esta es la primer implementación del juego que, originalmente, fueplaneado para ser resuelto con lápiz y papel.
 
 ### Parecidos
-Este entretenimiento algunas características del SU-DO-KU y las pirámides numéricas. Por la dificultad para resolver es más simple que el primero y más complicado de resolver que las últimas. 
+Este entretenimiento algunas características del SU-DO-KU y las pirámides numéricas. Por la dificultad para resolver es más simple que el primero y más complicado de resolver que las últimas.
 
 ### Grado de dificultad
-El grado de dificultad del juego queda fijado por la cantidad de círculos; 
+El grado de dificultad del juego queda fijado por la cantidad de círculos;
 
 ### Palabras clave
 juegos, lógica, entretenimiento, recreación matemática, aritmética.
 
 Parecidos  similares
-Este entretenimiento algunas características del SU-DO-KU y las pirámides numéricas. Por la dificultad para resolver es más simple que el primero y más complicado de resolver que las últimas. 
+Este entretenimiento algunas características del SU-DO-KU y las pirámides numéricas. Por la dificultad para resolver es más simple que el primero y más complicado de resolver que las últimas.
 
 
 Espero disfruten estos entretenimientos.
@@ -134,20 +134,20 @@ version     = "1.7.5"	12/10/2018
 	Dimensines de pantalla, fijas (1000 x 600) y redimensionable (pixi)
 	Adecuacion a tablets
 	Correción textos con acentos
-	
+
 	Mejora en el aprovechamiento del espacio de pantalla y tamaño del tablero con la consecuente facilidad de manejo. Adecuacion para tablets.
 	Improvement in the use of screen space and board size with the consequent ease of use. Adaptation for tablets.
 
 	Verbesserung der Nutzung von Bildschirmplatz und Boardgröße mit der daraus resultierenden Benutzerfreundlichkeit. Anpassung für Tablets.
 
-	Incorporo mensajes en diferentes idiomas. Detectar los mensajes, colocarlos en 
+	Incorporo mensajes en diferentes idiomas. Detectar los mensajes, colocarlos en
 		variables y asignarles valor segun sea el idioma del usuario.
 
 version	= "1.7.6"	26/10/2018
 	Correcion tamaño ventanas de textos ayuda y acerca de
 
 
-Faltaría una 
+Faltaría una
 - invitacion a comentar el juego
 - indicacion de ayudas mas completas para jugar
 - mejorar la distribucion de imagenes en la pantalla. Calculos proporcionales a la medida de la pantalla
