@@ -2,8 +2,8 @@
 	xmlns   = "http://www.w3.org/ns/widgets"
 	xmlns:gap	= "http://phonegap.com/ns/1.0"
     id          = "ar.com.ingverger.criptosumas"
-	versionCode = "00400"
-    version     = "0.4.0" >
+	versionCode = "00401"
+    version     = "0.4.1" >
 
 	<name>Criptosumas</name>
 
