@@ -21,8 +21,7 @@
 //=========
 const 
   //	versionString="0.4.2", //  lleva el numero de version actual
-  //	DEBUG = true,          //  para depurar código
-  DEBUG = false,          //  para depurar código
+  DEBUG = true,          //  para depurar código
   DEBUG2 = false;
 
   
@@ -129,7 +128,7 @@ function permutation(count, nodeArr, n, s1, s2, s3)
 
 					for (var j = 0; j < count; j++) 
 							resultado += "  " + nodeArr[j].c + " = " + nodeArr[j].v + '\n'; 
-					//	console.log( resultado ) ;			//	cout << "Solution found: "; 
+					console.log( resultado ) ;			//	cout << "Solution found: "; 
 
 					//	document.getElementById("resultado").innerHTML=resultado;
 
@@ -145,13 +144,13 @@ function permutation(count, nodeArr, n, s1, s2, s3)
 						cNum += nodeArr[i].v.toString();
 
 					}
-					//	console.log('cCar: ', cCar );
-					//	console.log('cNum: ', cNum );
+					console.log('cCar: ', cCar );
+					console.log('cNum: ', cNum );
 
 					num1 = s1;
 					num2 = s2;
 					num3 = s3;
-					//	console.log( 'num1: ',num1 );
+					console.log( 'num1: ',num1 );
 
 					num1 = transponer( s1, cCar	, cNum );		//	genera cadena con digitos equivalentes
 					num2 = transponer( s2, cCar	, cNum );		//	genera cadena con digitos equivalentes
@@ -168,6 +167,18 @@ function permutation(count, nodeArr, n, s1, s2, s3)
 		} 
 		return false; 
 	} 
+
+	//	console.log(mostrarPropiedades(use, 'use'));
+	//	console.log('use: ', use);
+	//	if (DEBUG)
+	//	{
+	//		var txt = 'nodeArr: \n';
+	//	  for (var i = 0; i < nodeArr.length; i++) 
+	//		{
+	//			txt += nodeArr[i].c +', '+ nodeArr[i].v + '\n';
+	//		}
+	//	}
+	//	console.log(txt);
 
 
 	for ( var i = 0; i < 10; i++) 
@@ -210,17 +221,27 @@ function transponer( cCad, cCar, cNum ) {
 		//	nInd = nodeArr[i].v;				//	checkNodearr(car)
 		nInd = cCar.indexOf(car);
 
-		//	console.log('i, car, nInd: ' , i, car, nInd );
+		console.log('i, car, nInd: ' , i, car, nInd );
+		//	console.log(mostrarPropiedades(nodeArr[i], 'nodeArr['+i+']' ));
 
 		newCad += cNum[nInd];
 	}
-	//	console.log( 'newCad: ',newCad );
+	console.log( 'newCad: ',newCad );
 
 	return newCad;
 };
  
 //	function checkNodeArr(char) {
 function checkNodeArr(element, index, array) {
+	
+	//	function checkAdult(age) 
+  //	return age >= 18;
+
+	//	char == cCar;
+
+	//	console.log('char: ', char);
+	console.log('element, index, array: ', element, index, array);
+
 
   //	return char == cCar;
   return element == cCar;
@@ -244,6 +265,15 @@ function solveCryptographic(s1, s2, s3)		//	bool solveCryptographic(string s1, s
     for (var i = 0; i < 26; i++) 
 			freq[i]=0; 
   
+    //	for (var i = 0; i < l1; i++) 
+    //	    ++freq[s1[i] - 'A']; 
+    //	for (var i = 0; i < l1; i++) {
+    //	    ++freq[s1.charCodeAt(i)-65]; 
+		//	console.log( "s1[i], s1.charCodeAt(i) - 65: ", s1[i], s1.charCodeAt(i)-65, freq[s1.charCodeAt(i)-65] );
+		//	}
+
+		//	console.log('freq: ', freq );
+
 
 
     for (var i = 0; i < l1; i++)
@@ -255,6 +285,7 @@ function solveCryptographic(s1, s2, s3)		//	bool solveCryptographic(string s1, s
     for (var i = 0; i < l3; i++) 
         ++freq[s3.charCodeAt(i)-65]; 
 
+		//	console.log('freq: ', freq );
   
     // count number of unique char 
     for (var i = 0; i < 26; i++) 
@@ -268,12 +299,15 @@ function solveCryptographic(s1, s2, s3)		//	bool solveCryptographic(string s1, s
         return false; 
     } 
 
-		// array of nodes 
+	
+		console.log('count: ', count);
+    // array of nodes 
     nodeArr = new Array(count); 
 
 		//	inicializamos array de letras - numeros
 		for (var i = 0; i < nodeArr.length; i++) {
 			nodeArr[i] = {c:'',v:-1};	// 		++freq[s1.charCodeAt(i)-65]; 
+			//	console.log('nodeArr[',i,']: ', nodeArr[i]);
 		}
 		
 
@@ -310,10 +344,14 @@ function solveCryptographic(s1, s2, s3)		//	bool solveCryptographic(string s1, s
 				txt += nodeArr[i].c +', '+ nodeArr[i].v + '\n';
 			}
 			console.log(txt);
+
 			console.log( 'permutation(count, nodeArr, 0, s1, s2, s3): ', lReturn );
 			console.log( 'count, s1, s2, s3): ', count, s1, s2, s3 );
 
+			//	console.log( '%c nodeArr: '+ mostrarPropiedades( nodeArr, 'nodeArr'), "color: green; font-style: italic" );
 		} 
+		//	else {
+		//	}
 
     return lReturn;				//	permutation(count, nodeArr, 0, s1, s2, s3); 
 } 
@@ -325,6 +363,7 @@ function main() //int main()
 //		//	var s1 = "SEND", 
 //	  //	  s2 = "MORE", 
 //	  //	  s3 = "MONEY"; 
+//			//	console.log('s1, s2, s3: ' ,document.getElementById("sumando1").innerHTML,', ', s2,', ', s3 );
 //			tmp = document.getElementById("sumando1").value;
 //			s1 = tmp.toUpperCase();
 //			tmp = document.getElementById("sumando2").value;
@@ -348,7 +387,7 @@ function main() //int main()
 
 	for (var i=0;i<use.length ;i++ )use[i]=0;
 
-	if (DEBUG){ console.log('='.repeat(32), '\ns1, s2, s3: ' ,s1, s2, s3)	};
+	console.log('='.repeat(32), '\ns1, s2, s3: ' ,s1, s2, s3);
 
 	//	s2 = s2.toUpperCase( document.getElementById("sumando2").value);
 	//	s3 = s3.toUpperCase( document.getElementById("Total").value);

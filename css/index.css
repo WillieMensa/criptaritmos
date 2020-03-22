@@ -6,7 +6,7 @@ body {
 	width: 90%;
 	max-width: 800px;
 	margin: 2em auto;
-	font: 1.4em Arial, Helvetica, sans-serif;
+	font: 1.3em Arial, Helvetica, sans-serif;
 	background: #114411;
 	color: #112222;
 }
@@ -25,16 +25,8 @@ body {
 	border: 8px solid blue;
 }
 
-
-header,
-footer {
-	border-radius: 5px;
-	padding: 10px;
-	background-color: rgb(182,196,196);
-	border: 2px solid rgb(79,185,227);
-	color: maroon;
-}
-				
+/*
+*/				
 
 table {
 	font-family: arial, sans-serif;
@@ -45,7 +37,7 @@ table {
 td, th {
 	border: 1px solid #dddddd;		
 	padding: 8px;
-	width: 50%;
+	width: 60px;
 }
 
 .center {
@@ -60,7 +52,6 @@ td, th {
 .uppercase {
 	text-transform:uppercase;
 	font: 1.0em Arial, Helvetica, sans-serif;
-
 }
 
 a {
@@ -94,7 +85,11 @@ button {
 	background: #114411;
 	border: none;
 	border-radius: 4px;
-	color: #cccccc;
+	color: #eeeeee;
 	font-family: 'roboto_mediumregular';
 }
 
+.fondo_verde {
+	background: #114411;
+	color: #eeeeee;
+}

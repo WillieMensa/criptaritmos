@@ -6,5 +6,10 @@
 */
 
 const 
-  versionString="0.4.1", //  lleva el numero de version actual
+  versionString="0.4.2" //  lleva el numero de version actual
+
+
+	function version(){
+		return 'Versión ' + versionString;
+	};
 

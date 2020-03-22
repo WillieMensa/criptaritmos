@@ -5,7 +5,7 @@
   <meta name="Author" content="VW Clever Games">
   <meta name="Keywords" content="Criptosumas, Cryptarithmetic, Criptaritmetica">
   <meta name="Description" content="Resolucion problemas de criptoaritmetica">
-  <title>Criptosumas 0.4.1</title>
+  <title>Criptosumas 0.4</title>
 	<!-- Exploramos alternativa utilizando Bootstrap.css -->
 
 	<meta charset="ISO-8859-1">
@@ -15,12 +15,10 @@
 
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<!-- Latest compiled and minified CSS -->
+	<!-- Bootstrap y jquery -->
   <link rel="stylesheet" href="css/bootstrap.min.css">
-	<!-- jQuery library -->
-	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery-3.4.1.min.js"></script>
   <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script> -->
-	<!-- Latest compiled JavaScript -->
   <script src="js/bootstrap.min.js"></script>
 
 	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
@@ -45,7 +43,7 @@
     </div>
     <div class="col-sm-8 center">
 			<h1>Criptosumas</h1>
-			<p>Versión 0.4.0</p>
+			<p id='version'></p>
     </div>
   </div>
 
@@ -53,15 +51,15 @@
 	<!-- Fila de problema y solución -->
   <div class="row">
 		<div class="col-sm-6">
-			<h1>Suma</h1>
+			<h1>Problema</h1>
 			<table>
-				<tr><td class="right">Sumando 1</td><td><input type="text" id="sumando1"	class="uppercase"	name="sumando1" value='AGUA' 
+				<tr><td class="right">Sumando 1</td><td><input type="text" id="sumando1"	class="uppercase bg-dark text-white"	name="sumando1" value='AGUA' 
 					required minlength="4" maxlength="8" size="8"></td>
 				</tr>
-				<tr><td class="right">Sumando 2</td><td><input type="text" id="sumando2"	class="uppercase"	name="sumando2" value='YERBA'
+				<tr><td class="right">Sumando 2</td><td><input type="text" id="sumando2"	class="uppercase bg-dark text-white"	name="sumando2" value='YERBA'
 					required minlength="4" maxlength="8" size="8"></td>
 				</tr>
-				<tr><td class="right">Total</td>		<td><input type="text" id="Total"			class="uppercase"	name="Total"		value='MATES'
+				<tr><td class="right">Total</td>		<td><input type="text" id="Total"			class="uppercase bg-dark text-white"	name="Total"		value='MATES'
 					required minlength="4" maxlength="8" size="8"></td>
 				</tr>
 
@@ -74,9 +72,9 @@
 		<div class="col-sm-6">
 			<h1>Solución</h1>
 			<table>
-				<tr>	<td class="right">Sumando 1</td><td id="digit_suma1"></td></tr>
-				<tr>	<td class="right">Sumando 2</td><td id="digit_suma2"></td></tr>
-				<tr>	<td class="right">Total</td>		<td id="digit_total"></td></tr>
+				<tr>	<td class="right">Sumando 1</td><td id="digit_suma1" class="fondo_verde" size="8"></td></tr>
+				<tr>	<td class="right">Sumando 2</td><td id="digit_suma2" class="fondo_verde"></td></tr>
+				<tr>	<td class="right">Total</td>		<td id="digit_total" class="fondo_verde"></td></tr>
 
 			</table>
 
@@ -142,6 +140,9 @@
 
   <!-- <script src="index_1.js"></script> -->
   <script src="criptaritmos.js"></script>
+  <script src="version.js"></script>
+  <script src="funcs_para_jquery.js"></script>
+
 
 </body>
 </html>
