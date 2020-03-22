@@ -41,6 +41,7 @@
         <splash src="res/screen/android/drawable-port-xxxhdpi-screen.png"   density="port-xxxhdpi" />
 
     </platform>
+	<icon   src="logo.png" />
 
 	<content src="index.html" />
 
