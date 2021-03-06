@@ -2,154 +2,34 @@
 by Willie Verger
 
 ## Description
-CRIPTOSUMAS is a logic game. It's an opportunity for mental exercise and fun at the same time.
+CRIPTOSUMAS is a logic game.
+Destinada a resolver problemas de criptosumas
+It's an opportunity for mental exercise and fun at the same time.
 
 ### What does it consist of?
-There is a set of circles joined by lines that form squares and triangles.
-In the circles or vertices of each figure a different number has been assigned between one and nine.
-In each figure the resulting sum of the corresponding vertices is shown.
-The object of the game is to deduce the values ??assigned to each circle. The values ??of two vertices are given as help.
+En estos problemas se presenta una suma encriptada mediante palabras, generalmente relacionadas. 
+En esas palabras a cada letra le corresponde un 煤nico d铆gito y cada d铆gito reemplaza una 煤nica letra.
 
 ### Requirements
 Requires the exercise of logic and a minimum knowledge of arithmetic to be solved: add.
 
-###
-You can generate games with different number of vertices.
-They have been assigned numbers from 1 to 9 in the case of a SU-MA-DO of 3x3, from 1 to 16 for the case of a SU-MA-DO of 4x4
-And from 1 to 25 for the case of a SU-MA-DO of 5x5. The number within each triangle or square is the sum of the circles of that figure.
-The object of the game is to deduce the values ??assigned to each circle. Some of these numbers are given as help.
-The more circles, the more difficulty.
-
-### Degree of difficulty
-The degree of difficulty of the game is fixed by the number of circles;
-
-This is the first implementation of the game originaly planed for being solved with pencil and paper.
+### Operaci贸n
+Se ingresan las palabras a sumar en 'Sumando 1', 'Sumando 2' y el 'Total' en los campos correspondientes.
+A continuaci贸n se pulsa el bot贸n CALCULAR. La aplicaci贸n responde, si existe una soluci贸n, presentando los n煤meros buscados.
+Puede que no exista una soluci贸n para las palabras presentadas. En ese caso el programa dar谩 el aviso correspondiente.
 
 ### Keywords
 Games, logic, entertainment, mathematical recreation.
 
 ## Usage
 
-A good starting point declaration might be:
-
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" />
-
-For more information on the Content Security Policy, see the [section on CSP in the Cordova Whitelist Plugin documentation][cordova-plugin-whitelist-csp].
-
-Another good resource for generating a good CSP declaration is [CSP is Awesome][csp-is-awesome]
-
-
-[phonegap-cli-url]: http://github.com/phonegap/phonegap-cli
-[cordova-app]: http://github.com/apache/cordova-app-hello-world
-[bithound-img]: https://www.bithound.io/github/phonegap/phonegap-app-hello-world/badges/score.svg
-[bithound-url]: https://www.bithound.io/github/phonegap/phonegap-app-hello-world
-[config-xml]: https://github.com/phonegap/phonegap-template-hello-world/blob/master/config.xml
-[index-html]: https://github.com/phonegap/phonegap-template-hello-world/blob/master/www/index.html
-[cordova-whitelist-guide]: https://cordova.apache.org/docs/en/dev/guide/appdev/whitelist/index.html
-[cordova-plugin-whitelist]: http://cordova.apache.org/docs/en/latest/reference/cordova-plugin-whitelist
-[cordova-plugin-whitelist-csp]: http://cordova.apache.org/docs/en/latest/reference/cordova-plugin-whitelist#content-security-policy
-[csp-is-awesome]: http://cspisawesome.com
-
-### Spanish
-
-## T韙ulo
-# SUMADO. Un juego de l骻ica.
-
-## Descripci髇
-SUMADO es un juego de l骻ica.  Una oportunidad de ejercicio mental y diversi髇 al mismo tiempo.
-### 縀n que consiste?
-Hay un conjunto de c韗culos unidos por l韓eas que forman cuadrados y tri醤gulos.
-En los c韗culos o v閞tices de cada figura se ha asignado un n鷐ero diferente entre uno y nueve.
-En cada figura se muestra la suma resultante de los correspondientes v閞tices.
-El objeto del juego es deducir los valores asignados a cada c韗culo.  Se da como ayuda los valores de dos v閞tices.
-
-#### Descripci髇 breve
-Un juego de l骻ica, aritm閠ica, ejercicio mental y diversi髇 al mismo tiempo.
-### 縀n que consiste?
-
-Hay un conjunto de c韗culos unidos por l韓eas que forman cuadrados y tri醤gulos. En los c韗culos o v閞tices de cada figura se ha asignado un n鷐ero diferente entre uno y nueve.
-En cada figura se muestra la suma resultante de los correspondientes v閞tices.
-El objeto del juego es deducir los valores asignados a cada c韗culo.  Se da como ayuda los valores de dos v閞tices.
-
-### Requerimientos
-Requiere del ejercicio de la l骻ica y un m韓imo conocimiento de aritm閠ica para ser resuelto: sumar.
-
-### Variantes
-Se pueden generar juegos con diferente cantidad de v閞tices.
-en ellos se han asignado n鷐eros del 1 al 9 para el caso de un SU-MA-DO de 3x3, del 1 al 16 para el caso de un SU-MA-DO de 4x4
-y del 1 al 25 para el caso de un SU-MA-DO de 5x5.  El n鷐ero dentro de cada tri醤gulo o cuadrado es la suma de los c韗culos de esa figura.
-El objeto del juego es deducir los valores asignados a cada c韗culo.  Se dan como ayuda algunos de estos n鷐eros.
-A mayor cantidad de c韗culos, mayor dificultad.
-
-Esta es la primer implementaci髇 del juego que, originalmente, fueplaneado para ser resuelto con l醦iz y papel.
-
-### Parecidos
-Este entretenimiento algunas caracter韘ticas del SU-DO-KU y las pir醡ides num閞icas. Por la dificultad para resolver es m醩 simple que el primero y m醩 complicado de resolver que las 鷏timas.
-
-### Grado de dificultad
-El grado de dificultad del juego queda fijado por la cantidad de c韗culos;
-
-### Palabras clave
-juegos, l骻ica, entretenimiento, recreaci髇 matem醫ica, aritm閠ica.
-
-Parecidos  similares
-Este entretenimiento algunas caracter韘ticas del SU-DO-KU y las pir醡ides num閞icas. Por la dificultad para resolver es m醩 simple que el primero y m醩 complicado de resolver que las 鷏timas.
 
 
 Espero disfruten estos entretenimientos.
 
 ### Virtudes
-Un desaf韔 simple que puede ser resuelto con conocimientos b醩icos de aritm閠ica y razonando l骻icamente.
-Permite afianzar conocimientos de matem醫ica b醩ica y agilizar la mente de quienes lo practican.
+Un desaf铆o simple que puede ser resuelto con conocimientos b谩sicos de aritm茅tica y razonando l贸gicamente.
+Permite afianzar conocimientos de matem谩tica b谩sica y agilizar la mente de quienes lo practican.
 
-Clasificaci髇 de la aplicaci髇: para todos los p鷅licos.
-
-Video en: https://youtu.be/8RfLuiR2PW0
-
-App ID
-2706674
-Version n_a
-
-Owned by ingverger@gmail.com
-
-PhoneGap (iOS / Android / Windows)
-cli-6.5.0 (4.3.1 / 6.1.2 / 4.4.3)
-
-Vinculo para habilitar la versi髇 con los verificadores.
-https://play.google.com/store/apps/details?id=ar.com.ingverger.sumado
-
-
-version     = "1.7.0"	10/10/2018
-version     = "1.7.2"	11/10/2018
-	Versi髇 preparada para mostrarse en una pantallla apaisada (horizontal) y orientada fundamentalmente a la API 26 de Android.
-	Comento minsdkVersion para ampliar compatibilidad <!-- <preference name="android-minSdkVersion"  value="16" /> -->
-	Ojo! Esto ultimo lo hago directamente en github
-
-version     = "1.7.3"	12/10/2018
-	Adecuacion a tablets
-
-version     = "1.7.4"	12/10/2018
-
-version     = "1.7.5"	12/10/2018
-	Dimensines de pantalla, fijas (1000 x 600) y redimensionable (pixi)
-	Adecuacion a tablets
-	Correci髇 textos con acentos
-
-	Mejora en el aprovechamiento del espacio de pantalla y tama駉 del tablero con la consecuente facilidad de manejo. Adecuacion para tablets.
-	Improvement in the use of screen space and board size with the consequent ease of use. Adaptation for tablets.
-
-	Verbesserung der Nutzung von Bildschirmplatz und Boardgr鲞e mit der daraus resultierenden Benutzerfreundlichkeit. Anpassung f黵 Tablets.
-
-	Incorporo mensajes en diferentes idiomas. Detectar los mensajes, colocarlos en
-		variables y asignarles valor segun sea el idioma del usuario.
-
-version	= "1.7.6"	26/10/2018
-	Correcion tama駉 ventanas de textos ayuda y acerca de
-
-
-Faltar韆 una
-- invitacion a comentar el juego
-- indicacion de ayudas mas completas para jugar
-- mejorar la distribucion de imagenes en la pantalla. Calculos proporcionales a la medida de la pantalla
-
+Clasificaci贸n de la aplicaci贸n: para todos los p煤blicos.
 

@@ -1,0 +1,25 @@
+{
+  "name": "criptaritmos",
+  "version": "0.5.0",
+  "description": "Resolver problemas donde se presenta una suma encriptada mediante palabras.",
+  "main": "index.html",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WillieMensa/criptaritmos.git"
+  },
+  "keywords": [
+    "criptaritmos",
+    "suma",
+    "encriptada",
+    "puzzles"
+  ],
+  "author": "Willie Verger",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/WillieMensa/criptaritmos/issues"
+  },
+  "homepage": "https://github.com/WillieMensa/criptaritmos#readme"
+}
