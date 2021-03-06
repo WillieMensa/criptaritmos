@@ -1,7 +1,8 @@
 {
   "name": "Criptaritmos",
-  "type": "custom",
   "integrations": {
     "cordova": {}
-  }
+  },
+  "type": "custom",
+  "id": "3993d39f"
 }
