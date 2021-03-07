@@ -1,0 +1,95 @@
+/*
+	Hoja de estilo para Criptosumas
+*/
+
+body {
+	width: 90%;
+	max-width: 800px;
+	margin: 2em auto;
+	font: 1.3em Arial, Helvetica, sans-serif;
+	background: #114411;
+	color: #112222;
+}
+
+
+.container > div {
+	border-radius: 5px;
+	padding: 2px;
+	background-color: #ccffdd;
+	margin: 0.2em auto;
+
+	/* border: 2px solid rgb(79,185,227); */
+}          
+
+.borde {
+	border: 8px solid blue;
+}
+
+/*
+*/				
+
+table {
+	font-family: arial, sans-serif;
+	border-collapse: collapse;
+	width: 100%;
+}
+
+td, th {
+	border: 1px solid #dddddd;		
+	padding: 8px;
+	width: 60px;
+}
+
+.center {
+	text-align: center;
+}
+
+.right {
+	text-align: right;
+}
+
+
+.uppercase {
+	text-transform:uppercase;
+	font: 1.0em Arial, Helvetica, sans-serif;
+}
+
+a {
+	text-decoration: none;
+	color: #112222;
+}
+
+@font-face {
+		font-family: "sonsie_oneregular";
+		src: url('../sonsieone-regular-webfont.woff2') format('woff2'),
+				 url('../sonsieone-regular-webfont.woff') format('woff');
+		font-weight: normal;
+		font-style: normal;
+}
+
+@font-face {
+		font-family: 'roboto_mediumregular';
+		src: url('roboto-medium-webfont.woff2') format('woff2'),
+				 url('roboto-medium-webfont.woff') format('woff');
+		font-weight: normal;
+		font-style: normal;
+}
+
+button {
+	margin-top: 20px;
+	width: 160px;
+	height: 40px;
+	line-height: 40px;
+	font-size: 1em;
+	padding: 0 0px;
+	background: #114411;
+	border: none;
+	border-radius: 4px;
+	color: #eeeeee;
+	font-family: 'roboto_mediumregular';
+}
+
+.fondo_verde {
+	background: #114411;
+	color: #eeeeee;
+}

@@ -1,0 +1,20 @@
+{
+    "android": {
+        "debug": {
+            "keystore": "criptaritmos.keystore",
+            "storePassword": "termopilas",
+            "alias": "criptaritmos",
+            "password" : "termopilas",
+            "keystoreType": "pkcs12",
+            "packageType": "apk"
+        },
+        "release": {
+            "keystore": "criptaritmos.keystore",
+            "storePassword": "termopilas",
+            "alias": "criptaritmos",
+            "password" : "termopilas",
+            "keystoreType": "pkcs12",
+            "packageType": "apk"
+        }
+    }
+}

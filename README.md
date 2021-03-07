@@ -33,3 +33,30 @@ Permite afianzar conocimientos de matemática básica y agilizar la mente de qui
 
 Clasificación de la aplicación: para todos los públicos.
 
+
+
+Generar la app con AppFlow
+
+ionic deploy add \
+--app-id="3993d39f" \
+--channel-name="Production" \
+--update-method="background"
+
+ionic deploy add \
+--app-id="3993d39f" \
+--channel-name="Production" \
+--update-method="background"
+
+"c:\Program Files\Android\Android Studio\jre\bin\keytool.exe" -genkeypair -alias criptaritmos -keystore criptaritmos.keystore -storepass termopilas
+
+"c:\Program Files\Android\Android Studio\jre\bin\keytool.exe" -importkeystore -srckeystore criptaritmos.keystore -destkeystore criptaritmos.keystore -deststoretype pkcs12
+
+
+------------------------------
+
+Compilacion
+cordova build --release --warning-mode
+
+E:\Dropbox\GitHub\criptaritmos\platforms\android\app\build\outputs\apk\release\app-release.apk
+
+
