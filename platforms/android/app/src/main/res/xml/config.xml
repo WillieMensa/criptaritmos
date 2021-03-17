@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="ar.com.ingverger.criptosumas" version="0.4.3" versionCode="00403" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+<widget id="ar.com.ingverger.criptosumas" version="0.4.3" versionCode="00403" xmlns="http://www.w3.org/ns/widgets">
     <allow-navigation href="http://localhost/*" />
     <allow-navigation href="https://localhost/*" />
     <allow-navigation href="ionic://*" />
@@ -19,7 +19,7 @@
 	Criptosumas let solve encripted adding problems.
 
   </description>
-    <author email="ingverger@gmail.com" href="http://www.ingverger.com.ar">
+    <author email="ingverger@gmail.com" href="https://ingverger.ar">
 		Willie Verger
 	</author>
     <content src="index.html" />
